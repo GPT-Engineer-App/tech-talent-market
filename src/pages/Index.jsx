@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Box, Flex, Heading, Input, InputGroup, InputLeftElement, Button, Stack, Tag, Text, VStack, HStack, Icon, Container, Textarea, useToast } from "@chakra-ui/react";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 import { FaSearch, FaEnvelope, FaUser } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 
@@ -49,11 +50,9 @@ const Index = () => {
 
   return (
     <Box>
+      <Navbar />
       <Container maxW="container.xl" p={4}>
         <VStack spacing={8}>
-          <Heading as="h1" size="xl">
-            React Particles
-          </Heading>
           <Text fontSize="xl">Your marketplace for specialized software talent in web technologies.</Text>
           <InputGroup>
             <InputLeftElement pointerEvents="none">
